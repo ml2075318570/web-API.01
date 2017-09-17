@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button"value="刷新" ><br/>
+<input type="radio" name="1"/>男 <input type="radio"name="1"/>女 <br/>
+<input type="checkbox"/>足球
+<input type="checkbox"/>篮球
+<input type="checkbox"/>排球
+<input type="checkbox"/>棒球
+</body>
+<script>
+    //获取
+    var aInp=document.getElementsByTagName('input');
+    //
+    aInp[0].onclick=function(){
+        aInp[1].checked='checked';
+        aInp[3].checked='checked';
+        aInp[5].checked='checked';
+    }
+</script>
+</html>

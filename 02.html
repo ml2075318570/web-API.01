@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p {
+            cursor: pointer;
+        }
+        h1 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<p id="a">请点击我！</p>
+<hr/>
+<h1 id="b">请点击我!!!!</h1>
+<script>
+    //获取 元素
+    var oA = document.getElementById('a');
+    //点击事件
+    oA.onclick = function () {
+        alert('点击成功！');
+    };
+    //获取 元素
+    var oH = document.getElementById('b');
+    //点击事件
+    oH.onclick = function () {
+        alert('又点击成功了');
+    };
+</script>
+</body>
+</html>

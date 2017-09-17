@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" id="aa" value="点击"/><br/>
+<img src="images/1.jpg" alt="" width="20%" title="点击前"/>
+</body>
+<script>
+    //获取 按钮
+    var oInp = document.getElementById('aa');
+    var aImg = document.getElementsByTagName('img')[0];
+    //单击事件
+    oInp.onclick = function () {
+        aImg.title = '点击后';
+    }
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<input type="button" value="wuwu"/>
+<input type="button" value="wuwu"/>
+<input type="button" value="wuwu"/>
+
+</body>
+<script>
+    //获取 按钮
+    var aInp = document.getElementsByTagName('input');
+    var obj = null;
+    for (var i = 0; i < aInp.length; i++) {
+
+        aInp[i].onclick = function () {
+            //
+            if (obj) {
+                obj.value = 'wuwu';
+            }
+
+            this.value = '哈哈';
+//
+            obj = this;
+        }
+    }
+    //1.建立一个变量，用来存储曾经单击过的按钮
+    //2.暴力清除
+//
+//    var aInp = document.getElementsByTagName('input');
+//    for (var i = 0; i < aInp.length; i++) {
+//
+//        aInp[i].onclick = function () {
+//            for (var i = 0; i < aInp.length; i++) {
+//                aInp[i].value='wuwu';
+//            }
+//            this.value='haha';
+//        }
+//
+//    }
+</script>
+</html>

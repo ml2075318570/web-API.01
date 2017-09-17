@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 80px;
+            border: 1px solid red;
+            display: none;
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+<img src="images/jd1.png" alt=""/><br/>
+<input type="button" value="登录"/><br/>
+
+<div>登录失败</div>
+<script>
+    //获取 img
+    var aImg = document.getElementsByTagName('img')[0];
+
+    //鼠标悬停事件
+    aImg.onmouseover = function () {
+        aImg.src = 'images/jd2.png';
+    };
+    aImg.onmouseout = function () {
+        aImg.src = 'images/jd1.png';
+    };
+
+    var aInp = document.getElementsByTagName('input')[0];
+    var aDiv = document.getElementsByTagName('div')[0];
+
+    aInp.onclick = function () {
+        aDiv.style.display = 'block';
+    };
+
+
+</script>
+</body>
+</html>
